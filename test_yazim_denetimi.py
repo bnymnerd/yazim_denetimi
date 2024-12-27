@@ -3,11 +3,11 @@ from yazim_denetimi import check_spelling
 
 # Test: Yazım hatalarını tespit etme
 def test_check_spelling():
-    text = "Helo, bu bir test metnidir."
+    text = "Hello, what is your namew?"
     corrected = check_spelling(text)
-    assert corrected == "Hello, bu bir test metnidir."  # Doğru yazım önerisi 'Hello'
+    assert corrected == "Hello, what is your name?"  # Doğru yazım önerisi 'Hello'
 
 def test_no_spelling_error():
-    text = "Merhaba, bu bir doğru yazım."
+    text = "Hello, correct."
     corrected = check_spelling(text)
     assert corrected == text  # Hata yoksa, metin aynen kalmalı
