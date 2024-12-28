@@ -2,6 +2,7 @@ import pytest
 import re
 
 
+<<<<<<< HEAD
 # Geçersiz içerik kontrolü için fonksiyon
 def check_invalid_content(file_path):
     # Geçersiz içerik kontrolü için düzenli ifadeler (regex)
@@ -33,4 +34,12 @@ def test_invalid_content():
 
     if invalid_lines:
         pytest.fail(f"Geçersiz içerik bulundu: {invalid_lines}")  # Testi başarısız kıl, hata mesajı ile
+=======
+def test_no_spelling_error():
+    text = "Hello, correct."
+    corrected = check_spelling(text)
+    assert corrected == text  # Hata yoksa, metin aynen kalmalı
+
+
+>>>>>>> 721f600ae03532459afa46333adc1e0aad43ef1b
 

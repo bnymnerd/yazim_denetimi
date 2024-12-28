@@ -13,11 +13,19 @@ def get_text():
 
     return text
 
+<<<<<<< HEAD
 def save_output(original_text, corrected_text):
     # Çıktılar.txt dosyasına kaydetme işlemi
     with open("ciktilar.txt", "a") as file:
         file.write(f"Orijinal Metin: {original_text}\n")
         file.write(f"Düzeltilmiş Metin: {corrected_text}\n\n")
+=======
+def save_to_file(original_text, corrected_text):
+    # Çıktıyı ciktilar.txt dosyasına kaydediyoruz
+    with open("ciktilar.txt", "a") as file:
+        file.write(f"Girilen Metin: {original_text}\n")
+        file.write(f"Düzeltilmiş Metin: {corrected_text}\n\n")  # Her kayıt sonrası bir boş satır bırakıyoruz
+>>>>>>> 721f600ae03532459afa46333adc1e0aad43ef1b
 
 def main():
     text = get_text()
@@ -31,8 +39,13 @@ def main():
     print("\nDüzeltilmiş Metin:")
     print(corrected_text)
 
+<<<<<<< HEAD
     # Çıktıları dosyaya kaydediyoruz
     save_output(text, corrected_text)
+=======
+    # Kullanıcının girdiği ve düzeltilmiş metni dosyaya kaydediyoruz
+    save_to_file(text, corrected_text)
+>>>>>>> 721f600ae03532459afa46333adc1e0aad43ef1b
 
 if __name__ == "__main__":
     main()
