@@ -10,3 +10,9 @@ Düzeltilmiþ Metin: name
 Girilen Metin: name
 Düzeltilmiþ Metin: name
 
+Girilen Metin: 0
+Düzeltilmiþ Metin: 0
+
+Girilen Metin: hell0
+Düzeltilmiþ Metin: hell
+
