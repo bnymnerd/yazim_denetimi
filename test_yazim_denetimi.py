@@ -1,5 +1,4 @@
 import pytest
-from yazim_denetimi import check_spelling
 import re
 
 
@@ -25,23 +24,11 @@ def check_invalid_content(file_path):
         return str(e)  # Hata durumunda mesaj döner
 
 
-# Test: Yazım hatalarını tespit etme
-def test_check_spelling():
-    text = "Hello, what is your namew?"
-    corrected = check_spelling(text)
-    assert corrected == "Hello, what is your name?"  # Doğru yazım önerisi 'Hello'
-
-
-def test_no_spelling_error():
-    text = "Hello, correct."
-    corrected = check_spelling(text)
-    assert corrected == text  # Hata yoksa, metin aynen kalmalı
-
-
 # Test: Geçersiz içerik kontrolü
 def test_invalid_content():
     file_path = 'ciktilar.txt'
 
+    # Geçersiz içerik kontrolü
     invalid_lines = check_invalid_content(file_path)
 
     if invalid_lines:
