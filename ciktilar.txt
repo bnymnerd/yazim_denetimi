@@ -4,3 +4,9 @@ Düzeltilmiþ Metin: fellow
 Girilen Metin: hansome
 Düzeltilmiþ Metin: handsome
 
+Girilen Metin: nameq
+Düzeltilmiþ Metin: name
+
+Girilen Metin: name
+Düzeltilmiþ Metin: name
+
