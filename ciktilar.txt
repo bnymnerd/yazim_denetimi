@@ -1,3 +1,6 @@
 Girilen Metin: hellow
 Düzeltilmiþ Metin: fellow
 
+Girilen Metin: hansome
+Düzeltilmiþ Metin: handsome
+
