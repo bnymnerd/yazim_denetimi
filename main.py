@@ -6,7 +6,7 @@ def get_text():
     text = input("Lütfen bir metin girin: ")
 
     # Geçersiz karakterler kontrolü (sayilar, semboller)
-    invalid_pattern = re.compile(r'[0-9!@#$%^&*(),.?":{}|<>]')
+    invalid_pattern = re.compile(r'[0-9!@#$%^&*üöşğÜÖŞĞİı(),.?":{}|<>]')
     if invalid_pattern.search(text):
         print("Geçersiz karakterler tespit edildi: Sayılar veya semboller kullanılamaz.")
         return None  # Geçersiz giriş yapıldığında metni döndürme
