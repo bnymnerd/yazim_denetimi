@@ -11,3 +11,6 @@ def test_no_spelling_error():
     text = "Hello, correct."
     corrected = check_spelling(text)
     assert corrected == text  # Hata yoksa, metin aynen kalmalı
+
+
+
